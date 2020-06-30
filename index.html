@@ -22,24 +22,24 @@
 <body>
     <!--start #header-->
     <header id="header">
-        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+        <div class="strip d-flex justify-content-between px-4 py-1 color-header-bg">
             <p class="font-rale font-size-12 text-black-50 m-0">Jr. Los incas 300-Urbanización Jorge Chávez, San Luis. (01) 512 4856</p>
             <div class="font-rale font-size-14">
                 <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-                <a href="#" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
+                <a href="#" class="px-3 border-right text-dark">Favoritos (0)</a>
             </div>
 
         </div>
 
     <!--Primary Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light color-second-bg">
         <a class="navbar-brand" href="#">TRB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav m-auto font-rubik">
             <li class="nav-item active">
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
@@ -47,43 +47,701 @@
               <a class="nav-link" href="#">Categorías</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="#">Productos <i class="fas fa-chevron-down"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categorías</a>
+              <a class="nav-link" href="#">Categorías<i class="fas fa-chevron-down"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Próximamente</a>
             </li>
             
           </ul>
+        <form action="#" class="font-size-14 font-rale">
+          <a href="#" class="py-2 rounded-pill color-primary-bg">
+            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+          </a>
+        </form>
+
+
         </div>
     </nav>
+    <!--end Primary Navigation-->
         
     </header>
     <!--end #header-->
     
     <!--start #main-site-->
-    <main>
-        
+    <main id="main-site">
+      <!--start Owl-carousel--> 
+      <section id="banner-area">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./assets/banner1.jpg" alt="banner1">
+          </div>
+          <div class="item">
+            <img src="./assets/banner2.jpg" alt="banner2">
+          </div>
+          <div class="item">
+            <img src="./assets/banner3.jpg" alt="banner3">
+          </div>
+        </div>
+      </section>
+      <!--end Owl-carousel-->
+      
+      <!--start top-sale-->
+      <section id="top-sale">
+        <div class="container py-5">
+          <h4 class="font-rubik font-size-20">Más vendidos</h4>
+          <hr>
+          <!--start Owl carousel--> 
+          <div class="owl-carousel owl-theme">
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/1.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 1</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/10</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/2.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 2</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/20</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/3.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 3</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/30</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/4.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 4</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/40</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/5.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 5</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/50</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/6.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 6</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/60</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/7.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 7</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/70</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!--end Owl carousel--> 
+          
+          
+
+        </div>
+      </section>
+      <!--end top-sale-->
+
+      <!--start Special Price-->
+      <section id="special-price">
+        <div class="container">
+          <h4 class="font-rubik font-size-20">Precios Especiales</h4>
+          <div id="filters" class="button-group text-right font-baloo font-size-16">
+            <button class="btn is-checked" data-filter="*">Todas las marcas</button>
+            <button class="btn" data-filter=".Marca1">Marca1</button>
+            <button class="btn" data-filter=".Marca2">Marca2</button>
+            <button class="btn" data-filter=".Marca3">Marca3</button>
+          </div>
+
+          <div class="grid">
+            <div class="grid-item Marca1 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/1.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 1</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/10</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca2 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/3.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 3</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca3 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/10.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 10</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca1 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/2.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 2</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/20</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca2 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/6.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 6</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca3 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/14.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 14</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca1 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/5.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 5</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/20</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca2 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/12.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 12</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="grid-item Marca3 border">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <a href="#"><img src="./assets/Productos/15.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Producto 15</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>S/30</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end Special Price-->
+
+    <!--start Banner Ads  -->
+      <section id="banner_adds">
+        <div class="container py-5 text-center">
+          <img src="./assets/bannerad1.png" alt="banner1" class="img-fluid">
+          <img src="./assets/bannerad2.png" alt="banner1" class="img-fluid">
+        </div>
+      </section>
+    <!--end Banner Ads  -->
+
+    <!--start New products -->
+    <section id="new-products">
+     <div class="container">
+      <h4 class="font-rubik font-size-20">Nuevos productos</h4>
+      <hr>
+          <!--start Owl carousel--> 
+          <div class="owl-carousel owl-theme">
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/1.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 1</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/10</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/2.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 2</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/20</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/3.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 3</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/30</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/4.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 4</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/40</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/5.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 5</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/50</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/6.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 6</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/60</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="item py-2 bg-light">
+              <div class="product font-rale">
+                <a href="#"><img src="./assets/Productos/7.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Producto 7</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>S/70</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Agregar al carrito</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!--end Owl carousel--> 
+      </div> 
+    </section>
+    <!--end New products -->
+
+    <!-- Blog
+    <section id="blogs">
+      <div class="container py-4">
+        <h4 class="font-rubik font-size-20">Últimos Blogs</h4>
+        <hr>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+              <h5 class="card-title font-size-16">Nombre blog1</h5>
+              <img src="../assets/blog/blog1.jpg" alt="cart image" class="card-img-top">
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-second text-left">Ir a blog1</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+              <h5 class="card-title font-size-16">Nombre blog2</h5>
+              <img src="../assets/blog/blog2.jpg" alt="cart image" class="card-img-top">
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-second text-left">Ir a blog2</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+              <h5 class="card-title font-size-16">Nombre blog3</h5>
+              <img src="../assets/blog/blog3.jpg" alt="cart image" class="card-img-top">
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-second text-left">Ir a blog3</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    end Blog-->
+
     </main>
     <!--end #main-site-->
-
+    
     <!--start #footer-->
-    <footer>
-
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <h4 class="font-rubik font-size-20">TRB</h4>
+            <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, deserunt.</p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h4 class="font-rubik font-size-20">Botelín Informativo</h4>
+            <form class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Email *">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary mb-2">Suscribirse</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Información</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Acerca de Nosotros</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Políticas de Privacidad</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Términos y Condiciones</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Cuenta</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Mi cuenta</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Historial de Pedidos</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Favoritos</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Boletín Informativo</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+      <p class="font-rale font-size-14">&copy; Copyrights 2020. Diseñado por: Barbara Sánchez, gracias a:  <a href="#" class="color-second">Daily Tuition</a></p>
+    </div>
     <!--end #footer-->
 
 
 
     <!--Bootstrap JS-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!--Owl Carousel Js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--isotope plugin CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <!--Custom Javascript-->
+    <script src="./index.js"></script>
 
 </body>
 </html>
