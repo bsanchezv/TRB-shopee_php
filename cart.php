@@ -9,8 +9,12 @@ include('header.php');
 //Include _cart-template file
 include('Template/_cart-template.php');
 
+//Include _wishlist_template file
+include('Template/_wishlist_template.php');
+
 //Include _new-products file
 include('Template/_new-products.php');
+
 
 ?>
     <!-- Blog
