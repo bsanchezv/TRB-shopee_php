@@ -38,7 +38,7 @@
 
     <!--Primary Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light color-second-bg">
-        <a class="navbar-brand" href="#">TRB</a>
+        <a class="navbar-brand" href="index.php">TRB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,24 +46,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav m-auto font-rubik">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categorías</a>
-                </li>
-                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+                    <!--
+                    </li>
                     <a class="nav-link" href="#">Productos <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categorías<i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Próximamente</a>
-                </li>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorías<i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Próximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                    -->
             </ul>
             <form action="#" class="font-size-14 font-rale">
                 <a href="cart.php" class="py-2 rounded-pill color-primary-bg">
