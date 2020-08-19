@@ -1,4 +1,4 @@
-<!-- start Shopping cart section  -->
+<!-- start Wishlist section  -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if (isset($_POST['delete-cart-submit'])){

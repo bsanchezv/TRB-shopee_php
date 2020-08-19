@@ -1,4 +1,4 @@
-<!--start Special Price-->
+<!--start catalogo-->
 
 <?php
 //En caso se agreguen más marcas
@@ -19,9 +19,9 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
     ?>
 <section id="special-price">
     <div class="container">
-        <h4 class="font-rubik font-size-20">Precios Especiales</h4>
+        <h4 class="font-rubik font-size-20">Catálogo</h4>
         <div id="filters" class="button-group text-right font-baloo font-size-16">
-            <button class="btn is-checked" data-filter="*">Todas las marcas</button>
+            <button class="btn is-checked" data-filter="*">Todo</button>
             <?php
             array_map(function ($brand){
                 printf('<button class="btn" data-filter=".%s">%s</button>', $brand, $brand);
@@ -66,3 +66,4 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
         </div>
     </div>
 </section>
+<!--end catalogo-->

@@ -76,7 +76,7 @@ class Cart
             return $cart_id;
         }
     }
-    // Agregar a la Lista de deseos
+    // insert into Lista de deseos
     public function saveForLater($item_id = null, $saveTable = "wishlist", $fromTable = "cart"){
         if ($item_id != null){
             $query = "INSERT INTO {$saveTable} SELECT * FROM {$fromTable} WHERE item_id={$item_id};";
