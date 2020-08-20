@@ -4,10 +4,10 @@
 class DBController
 {
     // Database Connection Properties
-    protected $host = 'localhost';
-    protected $user = 'root';
-    protected $password = '';
-    protected $database = "trbshopee";
+    protected $host = 'remotemysql.com';
+    protected $user = 'ZUCZxBxbsp';
+    protected $password = 'GwmhNXBD0J';
+    protected $database = "ZUCZxBxbsp";
 
     // connection property
     public $con = null;
