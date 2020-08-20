@@ -3,7 +3,6 @@ ob_start();
 //Include header.php file
 include('header.php');
 ?>
-
 <?php
 
 //Include _cart-template if it is not empty. (if)
