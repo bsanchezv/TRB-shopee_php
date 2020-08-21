@@ -54,21 +54,21 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`item_id`, `item_brand`, `item_name`, `item_price`, `item_image`, `item_register`) VALUES
-(1, 'Categoría 1', 'Producto 1', 152.00, './assets/Productos/1.jpg', '2020-03-28 11:08:57'), -- NOW()
-(2, 'Categoría 1', 'Producto 2', 122.00, './assets/Productos/2.jpg', '2020-03-28 11:08:57'),
-(3, 'Categoría 2', 'Producto 3', 122.00, './assets/Productos/3.jpg', '2020-03-28 11:08:57'),
-(4, 'Categoría 3', 'Producto 4', 122.00, './assets/Productos/4.jpg', '2020-03-28 11:08:57'),
-(5, 'Categoría 1', 'Producto 5', 122.00, './assets/Productos/5.jpg', '2020-03-28 11:08:57'),
-(6, 'Categoría 2', 'Producto 6', 122.00, './assets/Productos/6.jpg', '2020-03-28 11:08:57'),
-(7, 'Categoría 2', 'Producto 7', 122.00, './assets/Productos/7.jpg', '2020-03-28 11:08:57'),
-(8, 'Categoría 3', 'Producto 8', 122.00, './assets/Productos/8.jpg', '2020-03-28 11:08:57'),
-(9, 'Categoría 2', 'Producto 9', 152.00, './assets/Productos/9.jpg', '2020-03-28 11:08:57'),
-(10, 'Categoría 3', 'Producto 10', 152.00, './assets/Productos/10.jpg', '2020-03-28 11:08:57'),
-(11, 'Categoría 3', 'Producto 11', 152.00, './assets/Productos/11.jpg', '2020-03-28 11:08:57'),
-(12, 'Categoría 2', 'Producto 12', 152.00, './assets/Productos/12.jpg', '2020-03-28 11:08:57'),
-(13, 'Categoría 1', 'Producto 13', 152.00, './assets/Productos/13.jpg', '2020-03-28 11:08:57'),
-(14, 'Categoría 3', 'Producto 14', 152.00, './assets/Productos/14.jpg', '2020-03-28 11:08:57'),
-(15, 'Categoría 3', 'Producto 15', 152.00, './assets/Productos/15.jpg', '2020-03-28 11:08:57');
+(1, 'Categoría 1', 'Producto 1', 152.00, '.public/assets/Productos/1.jpg', '2020-03-28 11:08:57'), -- NOW()
+(2, 'Categoría 1', 'Producto 2', 122.00, '.public/assets/Productos/2.jpg', '2020-03-28 11:08:57'),
+(3, 'Categoría 2', 'Producto 3', 122.00, '.public/assets/Productos/3.jpg', '2020-03-28 11:08:57'),
+(4, 'Categoría 3', 'Producto 4', 122.00, '.public/assets/Productos/4.jpg', '2020-03-28 11:08:57'),
+(5, 'Categoría 1', 'Producto 5', 122.00, '.public/assets/Productos/5.jpg', '2020-03-28 11:08:57'),
+(6, 'Categoría 2', 'Producto 6', 122.00, '.public/assets/Productos/6.jpg', '2020-03-28 11:08:57'),
+(7, 'Categoría 2', 'Producto 7', 122.00, '.public/assets/Productos/7.jpg', '2020-03-28 11:08:57'),
+(8, 'Categoría 3', 'Producto 8', 122.00, '.public/assets/Productos/8.jpg', '2020-03-28 11:08:57'),
+(9, 'Categoría 2', 'Producto 9', 152.00, '.public/assets/Productos/9.jpg', '2020-03-28 11:08:57'),
+(10, 'Categoría 3', 'Producto 10', 152.00, '.public/assets/Productos/10.jpg', '2020-03-28 11:08:57'),
+(11, 'Categoría 3', 'Producto 11', 152.00, '.public/assets/Productos/11.jpg', '2020-03-28 11:08:57'),
+(12, 'Categoría 2', 'Producto 12', 152.00, '.public/assets/Productos/12.jpg', '2020-03-28 11:08:57'),
+(13, 'Categoría 1', 'Producto 13', 152.00, '.public/assets/Productos/13.jpg', '2020-03-28 11:08:57'),
+(14, 'Categoría 3', 'Producto 14', 152.00, '.public/assets/Productos/14.jpg', '2020-03-28 11:08:57'),
+(15, 'Categoría 3', 'Producto 15', 152.00, '.public/assets/Productos/15.jpg', '2020-03-28 11:08:57');
 
 -- --------------------------------------------------------
 
