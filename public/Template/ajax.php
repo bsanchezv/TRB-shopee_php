@@ -3,7 +3,7 @@
 require('../database/DBController.php');
 
 // require Product Class
-require ('../database/Product.php');
+require('../database/Product.php');
 
 // DBController object
 $db = new DBController();
