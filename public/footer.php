@@ -42,7 +42,7 @@
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2">
-    <p class="font-rale font-size-14">&copy; Copyrights 2020. Diseñado por: Barbara Sánchez, gracias a:  <a href="#" class="color-second">Daily Tuition</a></p>
+    <p class="font-rale font-size-14">&copy; Copyrights 2020. Diseñado por: Barbara Sánchez, gracias a:  <a href="https://www.youtube.com/channel/UCrG2Z0usOCCdUTAr4D1A8mw" class="color-second">Daily Tuition</a></p>
 </div>
 <!--end #footer-->
 
