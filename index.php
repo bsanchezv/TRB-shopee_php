@@ -1,7 +1,7 @@
 <?php
 ob_start();
 //Include header.php file
-include('header.php');
+include('public/header.php');
 ?>
 <?php
 //Include _banner-area.php file
@@ -24,5 +24,5 @@ include('Template/_new-products.php');*/
 
 <?php
 //Include footer.php file
-include('footer.php');
+include('public/footer.php');
 ?>

@@ -1,19 +1,19 @@
 <?php
 ob_start();
 //Include header.php file
-include('header.php');
+include('public/header.php');
 ?>
 <?php
 //Include _banner-adds file
-include('Template/_banner-ads.php');
+include('public/Template/_banner-ads.php');
 //Include _top-sale.php file
-include('Template/_offer.php');
+include('public/Template/_offer.php');
 //Include _top-sale.php file
-include('Template/_top-sale.php');
+include('public/Template/_top-sale.php');
 
 ?>
 
 <?php
 //Include footer.php file
-include('footer.php');
+include('public/footer.php');
 ?>

@@ -20,7 +20,7 @@
 
     <?php
     //require functions.php file
-    require('functions.php');
+    require('public/functions.php');
     ?>
 
 </head>

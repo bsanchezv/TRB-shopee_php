@@ -1,7 +1,7 @@
 <?php
 ob_start();
 //Include header.php file
-include('header.php');
+include('public/header.php');
 ?>
 <?php
 
@@ -13,11 +13,11 @@ count($product->getData('cart')) ? include('Template/_cart-template.php') : incl
 count($product->getData('wishlist')) ? include('Template/_wishlist_template.php') : include('Template/notFound/_wishlist_notFound.php');
 
 //Include _new-products file
-include('Template/_new-products.php');
+include('public/Template/_new-products.php');
 
 ?>
 
 <?php
 //Include footer.php file
-include('footer.php');
+include('public/footer.php');
 ?>
