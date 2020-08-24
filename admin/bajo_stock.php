@@ -65,7 +65,7 @@ $con->close();
                                             <th class="text-center"> <?php echo $registro['stock'];  ?></th>
                                             <th class="text-center"> <?php echo $registro['stock_min'];  ?></th>
                                             <th class="text-center" >
-                                                <a href="entrada_producto.php?id=<?php echo $registro['item_id'];?>"><img src="assets/iconos/add.png" width="20" title="Agregar producto"></a>
+                                                <a href="entrada_producto.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/add.png" width="20" title="Agregar producto"></a>
                                             </th>
                                         </tr>
                                         <?php

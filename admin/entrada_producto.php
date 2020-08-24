@@ -2,7 +2,7 @@
 <?php
     require('headside.php');
     require('DBconect.php');
-    $item_id = $_GET['id'] ;
+    $item_id = $_GET['item_id'] ;
     $query = "SELECT * FROM productos WHERE item_id= '$item_id'";
 
     $resultado=mysqli_query($con,$query);

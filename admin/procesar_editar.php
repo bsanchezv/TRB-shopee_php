@@ -5,7 +5,7 @@ require ('ayuda.php');
 // error variable.
 $error = array();
 
-$item_id = $_GET['id'] ;
+$item_id = $_GET['item_id'] ;
 $nombreProducto = validate_input_text($_POST['nombreProducto']);
 if (empty($nombreProducto)){
     $error[] = "Debes llenar el campo de Nombre";
