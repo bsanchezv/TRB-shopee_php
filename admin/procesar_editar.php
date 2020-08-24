@@ -1,6 +1,7 @@
 <?php
 
 require ('ayuda.php');
+
 // error variable.
 $error = array();
 
@@ -28,23 +29,17 @@ $imagen = upload_image('./imgproductos/', $files);
 
 if(empty($error)){
 
-    //require ('conect.php');
+    require ('DBconect.php');
     $oferta=$Precio_prod*(100-$Tasa_Descuento)/100;
     // query
     $query = "UPDATE productos SET categoria='$categoriaProducto',nombre='$nombreProducto',precio_normal='$Precio_prod',descuento='$Tasa_Descuento',
             precio_oferta='$oferta', talla='$tallaProducto',descripcion='$Descripcion',color='$coloresProducto',
             imagen='$imagen',stock_min='$stockmin', fecha_registro= NOW() WHERE item_id='$item_id'";
 
-    $con = mysqli_connect("localhost","root","","register_db");
-
     $resultado=mysqli_query($con,$query);
 
-    if(!$resultado){
-        echo 'Error al registrar';
-    }
-    else{
-        header('location: ver_catalogo.php');
-    }
+    header('location: ver_catalogo.php');
+
     $con->close();
 }else{
     echo 'NO VALIDO';

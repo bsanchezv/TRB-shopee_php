@@ -25,21 +25,23 @@
     <!-- main -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <?php
-    //require functions.php file
-    require('functions.php');
-    ?>
-
 </head>
 <body>
 <!--start #header-->
+<?php
+    require ('DBconect.php');
+    $admiID=$_GET['id'];
+    $datosAdmi= "SELECT * FROM administrador WHERE user_id= '$admiID'";
+    $resultado3=mysqli_query($con,$datosAdmi);
+    $admi=mysqli_fetch_assoc($resultado3);
+?>
 <header id="header">
 
     <div class="logo pull-left"> Tienda de Ropa de Bebés </div>
     <div class="header-content">
         <div class="header-date pull-left">
             <strong>
-                Bienvenido Administrador D'angelo
+                Bienvenido Administrador <?php echo $admi['first_name']; echo " "; echo $admi['last_name'];  ?>
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-smile" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path fill-rule="evenodd" d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z"/>
@@ -57,7 +59,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="perfil.php">
+                            <a href="perfil.php?id=<?php echo $admi['user_id'];?>">
                                 <img src="assets/perfil.jpg" alt="15" height="15" class="img-circle img-inline">
                                 Perfil
                             </a>
@@ -117,7 +119,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="text-center text-info" href="registrarentrada.php">Entrada Productos</a></li>
                         <li><a class="text-center text-info" href="salidaproducto.php">Salidas Productos</a></li>
-                        <li><a class="text-center text-info" href="#">Bajo Stock</a></li>
+                        <li><a class="text-center text-info" href="bajo_stock.php">Bajo Stock</a></li>
                     </ul>
                 </div>
 

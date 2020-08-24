@@ -2,10 +2,6 @@
 //require functions.php file
 require('headside.php');
 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    require ('nuevoproducto_proceso.php');
-}
-
 ?>
 <!--Cuerpo-->
 
@@ -26,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                             <div class="panel-body">
 
                                 <div class="d-flex justify-content-center">
-                                    <form action="nuevo_producto.php" method="post" enctype="multipart/form-data" id="reg-form">
+                                    <form action="nuevoproducto_proceso.php" method="post" enctype="multipart/form-data" id="reg-form">
                                         <!--nombres producto-->
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">

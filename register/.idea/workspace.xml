@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="29b2f2fb-41c1-4723-9e92-4cecff09ea25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/register.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-admi/.idea/register.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-cliente/.idea/register.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/bajo_stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/bajo_stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/comentarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/comentarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/detalleventa.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/detalleventa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/editar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/editar_perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/editar_perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/entrada_producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/entrada_producto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/headside.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/headside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/nuevo_producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/nuevo_producto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/nuevoproducto_proceso.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/nuevoproducto_proceso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/procesar_actualizar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/procesar_actualizar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/procesar_editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/procesar_editar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/quitar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/quitar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/registrarentrada.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/registrarentrada.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/salidaproducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/salidaproducto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/ver_catalogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/ver_catalogo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/verdetalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/verdetalle.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1gWV0YNCKC22dIJ8FZGlFfONRNp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29b2f2fb-41c1-4723-9e92-4cecff09ea25" name="Default Changelist" comment="" />
+      <created>1598230112630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598230112630</updated>
+      <workItem from="1598230113734" duration="9743000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1598236121201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1598236121201" />
+  </component>
+</project>
