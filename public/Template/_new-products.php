@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <?php foreach($product_shuffle as $item ){ ?>
                 <div class="item py-2 bg-light">
                     <div class="product font-rale">
-                        <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id']); ?>"><img src="<?php echo $item['imagen']??"./assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', 'public/product.php', $item['item_id']); ?>"><img src="<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
                         <div class="text-center">
                             <h6><?php echo $item['nombre']??"Desconocido"; ?></h6>
                             <div class="rating text-warning font-size-12">

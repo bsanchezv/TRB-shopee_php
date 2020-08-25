@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <!-- start cart item -->
                 <div class="row border-top py-3 mt-3">
                     <div class="col-sm-2">
-                        <img src="<?php echo $item['item_image'] ?? "./assets/Productos/1.jpeg" ?>" style="height: 120px;" alt="cart1" class="img-fluid">
+                        <img src="<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpeg" ?>" style="height: 120px;" alt="cart1" class="img-fluid">
                     </div>
                     <div class="col-sm-8">
-                        <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Desconocido"; ?></h5>
-                        <small>de <?php echo $item['item_brand'] ?? "Marca"; ?></small>
+                        <h5 class="font-baloo font-size-20"><?php echo $item['nombre'] ?? "Desconocido"; ?></h5>
+                        <small>de <?php echo $item['categoria'] ?? "categoria"; ?></small>
                         <!-- start product rating -->
                         <div class="d-flex">
                             <div class="rating text-warning font-size-12">
@@ -66,13 +66,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     </div>
                     <div class="col-sm-2 text-right">
                         <div class="font-size-20 text-danger font-baloo">
-                            S/<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['item_price'] ?? 0; ?></span>
+                            S/<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['precio_normal'] ?? 0; ?></span>
                         </div>
                     </div>
                 </div>
                 <!-- end cart item -->
                 <?php
-                    return $item['item_price'];
+                    return $item['precio_normal'];
                 }, $cart); // closing array_map function
                 endforeach;
                 ?>
