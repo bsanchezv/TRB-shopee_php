@@ -2,13 +2,10 @@
 
 <?php
 //En caso se agreguen más marcas
-<<<<<<< HEAD
     $categoria = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
     $unique = array_unique($categoria);
-=======
-    $brand = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
-    $unique = array_unique($brand);
->>>>>>> 1f35554c79e25b51c69bf0ff8d8482fc9733e7f8
+    $categoria = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
+    $unique = array_unique($categoria);
     sort($unique);
     shuffle($product_shuffle);
 
