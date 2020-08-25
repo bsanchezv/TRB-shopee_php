@@ -50,15 +50,15 @@
                 </li>
                 <li
                 <li class="nav-item active">
-                    <a class="nav-link" href="offer.php">Ofertas <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../offer.php">Ofertas <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="new-products.php">Nuevos Productos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../new-products.php">Nuevos Productos <span class="sr-only">(current)</span></a>
                 </li>
 
             </ul>
             <form action="#" class="font-size-14 font-rale">
-                <a href="cart.php" class="py-2 rounded-pill color-primary-bg">
+                <a href="../cart.php" class="py-2 rounded-pill color-primary-bg">
                     <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
                     <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart')); ?></span>
                 </a>
