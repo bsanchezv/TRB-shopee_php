@@ -33,11 +33,11 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
 
         <div class="grid">
             <?php array_map(function($item) use($in_cart){ ?>
-<<<<<<< HEAD
+
             <div class="grid-item border <?php echo $item['categoria'] ?? "categoria" ; ?>">
-=======
+
             <div class="grid-item border <?php echo $item['categoria'] ?? "Brand" ; ?>">
->>>>>>> 1f35554c79e25b51c69bf0ff8d8482fc9733e7f8
+
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
                         <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"./assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
