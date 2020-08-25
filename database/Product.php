@@ -27,7 +27,7 @@ class Product
     }
 
     // get product using item id
-    public function getProduct($item_id = null, $table = 'product')
+    public function getProduct($item_id = null, $table = 'productos')
     {
         if (isset($item_id)) {
             $result = $this->db->con->query("SELECT * FROM {$table} WHERE item_id={$item_id}");

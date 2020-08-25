@@ -8,7 +8,7 @@ if ($item['item_id'] == $item_id) :
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="<?php echo $item['item_image'] ?? "./assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
+                <img src="<?php echo $item['imagen'] ?? "./assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceder a la compra</button>
@@ -25,8 +25,8 @@ if ($item['item_id'] == $item_id) :
                 </div>
             </div>
             <div class="col-sm-6 py-5">
-                <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Desconocido"; ?></h5>
-                <small>de <?php echo $item['item_brand'] ?? "Marca"; ?></small>
+                <h5 class="font-baloo font-size-20"><?php echo $item['nombre'] ?? "Desconocido"; ?></h5>
+                <small>de <?php echo $item['categoria'] ?? "Categoria"; ?></small>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -47,7 +47,7 @@ if ($item['item_id'] == $item_id) :
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>Precio Oferta:</td>
-                        <td class="font-size-20 text-danger">S/<span><?php echo $item['item_price'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Incluido I.G.V.</small></td>
+                        <td class="font-size-20 text-danger">S/<span><?php echo $item['precio_normal'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Incluido I.G.V.</small></td>
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>Ahorro:</td>

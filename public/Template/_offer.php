@@ -1,8 +1,8 @@
 <!--start offer-->
 <?php
 //En caso se agreguen más marcas
-$brand = array_map(function ($pro){ return $pro['item_brand']; }, $product_shuffle);
-$unique = array_unique($brand);
+$categoria = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
+$unique = array_unique($categoria);
 sort($unique);
 shuffle($product_shuffle);
 
@@ -21,12 +21,12 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
         <h4 class="font-rubik font-size-20">Ofertas Especiales</h4>
         <div class="grid">
             <?php array_map(function($item) use($in_cart){ ?>
-                <div class="grid-item border <?php echo $item['item_brand'] ?? "Brand" ; ?>">
+                <div class="grid-item border <?php echo $item['categoria'] ?? "categoria" ; ?>">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-rale">
-                            <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id']); ?>"><img src="<?php echo $item['item_image']??"./assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
+                            <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id']); ?>"><img src="<?php echo $item['imagen']??"./assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
                             <div class="text-center">
-                                <h6><?php echo $item['item_name']??"Desconocido"; ?></h6>
+                                <h6><?php echo $item['nombre']??"Desconocido"; ?></h6>
                                 <div class="rating text-warning font-size-12">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -35,8 +35,8 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                                     <span><i class="far fa-star"></i></span>
                                 </div>
                                 <div class="price py-2">
-                                    <td><span><strike>S/<?php echo $item['item_price']??'0';?></strike></span></td>
-                                    <td><span>S/<?php echo 0.3*$item['item_price']??'0';?></span></td>
+                                    <td><span><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
+                                    <td><span>S/<?php echo $item['precio_oferta']??'0';?></span></td>
                                 </div>
                                 <form method="post">
                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
