@@ -57,7 +57,7 @@ include ('helper.php');
 
                     <!-- boton login -->
                     <div class="submit-btn text-center my-5">
-                        <button type="submit" class="btn btn-warning rounded-pill text-dark px-5">Login</button>
+                        <button type="submit" class="btn btn-warning rounded-pill text-dark px-5">Login2</button>
                     </div>
 
                 </form>
