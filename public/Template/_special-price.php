@@ -1,7 +1,7 @@
 <!--start catalogo-->
 
 <?php
-//En caso se agreguen más marcas
+//En caso se agreguen más categorias
     $categoria = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
     $unique = array_unique($categoria);
     $categoria = array_map(function ($pro){ return $pro['categoria']; }, $product_shuffle);
@@ -38,7 +38,7 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
 
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
-                        <a href="<?php printf('%s?item_id=%s', 'public/product.php', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', '../public/product.php', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
                         <div class="text-center">
                             <h6><?php echo $item['nombre']??"Desconocido"; ?></h6>
                             <div class="rating text-warning font-size-12">
