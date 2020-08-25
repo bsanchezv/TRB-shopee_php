@@ -36,8 +36,6 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
 
             <div class="grid-item border <?php echo $item['categoria'] ?? "categoria" ; ?>">
 
-            <div class="grid-item border <?php echo $item['categoria'] ?? "Brand" ; ?>">
-
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
                         <a href="<?php printf('%s?item_id=%s', 'public/product.php', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
