@@ -29,7 +29,7 @@
 <body>
 <!--start #header-->
 <?php
-    require ('DBconect.php');
+    require ('database/DBController.php');
     $admiID=$_GET['id'];
     $datosAdmi= "SELECT * FROM administrador WHERE user_id= '$admiID'";
     $resultado3=mysqli_query($con,$datosAdmi);

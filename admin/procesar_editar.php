@@ -29,7 +29,7 @@ $imagen = upload_image('./imgproductos/', $files);
 
 if(empty($error)){
 
-    require ('DBconect.php');
+    require ('database/DBController.php');
     $oferta=$Precio_prod*(100-$Tasa_Descuento)/100;
     // query
     $query = "UPDATE productos SET categoria='$categoriaProducto',nombre='$nombreProducto',precio_normal='$Precio_prod',descuento='$Tasa_Descuento',

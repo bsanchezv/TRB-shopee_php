@@ -15,7 +15,7 @@ if (empty($password)){
 
 if(empty($error)){
     // consulta SQL
-    include ('DBconect.php');
+    include ('database/DBController.php');
     $query = "SELECT user_id, first_name, last_name, email, password, profileImage FROM user WHERE email='$email'";
 
     $resultadoCliente=mysqli_query($con,$query);

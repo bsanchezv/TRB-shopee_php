@@ -1,6 +1,6 @@
 <?php
 require('headside.php');
-require('DBconect.php');
+require('database/DBController.php');
 
 $query = "SELECT * FROM productos WHERE stock < stock_min";
 $resultado=mysqli_query($con,$query);

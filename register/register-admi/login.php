@@ -10,7 +10,7 @@ include ('helper.php');
 <?php
     // Conección mysqli
     //$user = array();
-    include ('DBconect.php');
+    include ('database/DBController.php');
 
     // obtenemos la información del usuario
     //if(isset($_SESSION['userID'])){

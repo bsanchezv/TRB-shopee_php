@@ -1,5 +1,5 @@
 <?php
-include ('DBconect.php');
+include ('database/DBController.php');
 require ('helper.php');
 // error variable.
 $error = array();

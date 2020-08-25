@@ -27,7 +27,7 @@ $imagen = upload_image('./assets/profile/', $files);
 
 if(empty($error)){
     // query
-    require ('DBconect.php');
+    require ('database/DBController.php');
     $query = "UPDATE administrador SET first_name='$nombreAdmi',last_name='$apellidoAdmi',email='$email', profileImage='$imagen' WHERE user_id='$admiID'";
 
     $resultado=mysqli_query($con,$query);
