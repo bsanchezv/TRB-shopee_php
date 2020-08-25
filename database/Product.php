@@ -12,7 +12,7 @@ class Product
     }
 
     // fetch product data using getData Method
-    public function getData($table = 'product')
+    public function getData($table = 'productos')
     {
         $result = $this->db->con->query("SELECT * FROM {$table}");
 

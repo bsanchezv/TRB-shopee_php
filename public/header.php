@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
     <!--Custom CSS file-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <?php
     //require functions.php file
@@ -30,7 +30,7 @@
     <div class="strip d-flex justify-content-between px-4 py-1 color-header-bg">
         <p class="font-rale font-size-12 text-black-50 m-0">Jr. Los incas 300-Urbanización Jorge Chávez, San Luis. (01) 512 4856</p>
         <div class="font-rale font-size-14">
-            <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+            <a href="./register/register-admi/login.php" class="px-3 border-right border-left text-dark">Login</a>
             <a href="#" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
         </div>
 
