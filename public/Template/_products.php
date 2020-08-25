@@ -8,7 +8,7 @@ if ($item['item_id'] == $item_id) :
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
+                <img src="./admin<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceder a la compra</button>
