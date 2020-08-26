@@ -15,7 +15,7 @@ if (empty($password)){
 
 if(empty($error)){
     // consulta SQL
-    include ('database/DBController.php');
+    include ('../database/dbconect.php');
     $query = "SELECT user_id, first_name, last_name, email, password, profileImage FROM user WHERE email='$email'";
 
     $resultadoCliente=mysqli_query($con,$query);
@@ -25,10 +25,12 @@ if(empty($error)){
 
     if (!empty($cliente)){
         // verify password
+        header("location: ../index.php?id=$clienteID");
+        /*
         if(password_verify($password, $cliente['password'])){
-            header("location: ../../index.php?id=$clienteID");
+            header("location: ../index.php?id=$clienteID");
             exit();
-        }
+        }*/
     }else{
         print "Email o password incorrecto";
     }

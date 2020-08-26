@@ -4,21 +4,13 @@
 //session_start();
 // header.php
 include ('header.php');
-include ('helper.php');
+include ('helper-admin.php');
 ?>
 
 <?php
-    // Conección mysqli
-    //$user = array();
-    include ('../../database/DBController.php');
 
-    // obtenemos la información del usuario
-    //if(isset($_SESSION['userID'])){
-       // $user = get_user_info($con, $_SESSION['userID']);
-    //}
-    // proceso de login
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        require ('login-process.php');
+        require ('login-admin-process.php');
     }
 ?>
 
@@ -28,19 +20,19 @@ include ('helper.php');
         <div class="col-lg-4 offset-lg-2">
             <div class="text-center pb-5">
                 <h1 class="login-title text-dark">Login - Administrador</h1>
-                <span class="font-ubuntu text-black-50">Crear nueva <a href="register.php">cuenta</a></span>
+                <span class="font-ubuntu text-black-50">Crear nueva <a href="register_admin.php">cuenta</a></span>
             </div>
 
             <!-- imagen -->
             <div class="upload-profile-image d-flex justify-content-center pb-5">
                 <div class="text-center">
-                    <img src="<?php echo isset($user['profileImage']) ? $user['profileImage'] : './assets/profile/beard.png' ; ?>" style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
+                    <img src="<?php echo isset($user['profileImage']) ? $user['profileImage'] : './assets_admin/profile/beard.png' ; ?>" style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
                 </div>
             </div>
 
             <!-- formulario -->
             <div class="d-flex justify-content-center">
-                <form action="login.php" method="post" enctype="multipart/form-data" id="log-form">
+                <form action="login_admin.php" method="post" enctype="multipart/form-data" id="log-form">
                     <!-- email-->
                     <div class="form-row my-4">
                         <div class="col">

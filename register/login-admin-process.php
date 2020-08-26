@@ -18,12 +18,8 @@ if(empty($error)){
 
     $query = "SELECT user_id, first_name, last_name, email, password, profileImage FROM administrador WHERE email='$email'";
 
-    $host = 'remotemysql.com';
-    $user = 'ZUCZxBxbsp';
-    $password = 'GwmhNXBD0J';
-    $database = "ZUCZxBxbsp";
 
-    include ('../../database/dbconect.php');
+    include ('../database/dbconect.php');
 
     $resultadoAdmi=mysqli_query($con,$query);
     $administrador=mysqli_fetch_assoc($resultadoAdmi);
@@ -33,11 +29,11 @@ if(empty($error)){
     if (!empty($administrador)){
         // verify password
 
-        header("location: ../../admin/ver_catalogo.php?id=$admiID");
+        header("location: ../admin/ver_catalogo.php?id=$admiID");
 
         /*if(password_verify($password, $administrador['password'])){
 
-            header("location: ../../admin/ver_catalogo.php?id=$admiID");
+            header("location: ../admin/ver_catalogo.php?id=$admiID");
             exit();
         }*/
     }else{
