@@ -6,7 +6,7 @@
 
     <?php
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            require ('register-process.php');
+            require ('register-cliente-process.php');
         }
     ?>
 
@@ -16,20 +16,20 @@
             <div class="col-lg-4 offset-lg-2">
                 <div class="text-center pb-5">
                     <h1 class="login-title text-dark">Registrarse</h1>
-                    <span class="font-ubuntu text-black-50">Estoy registrado: <a href="login.php">Login</a></span>
+                    <span class="font-ubuntu text-black-50">Estoy registrado: <a href="login_cliente.php">Login</a></span>
                 </div>
                 <div class="upload-profile-image d-flex justify-content-center pb-5">
                     <div class="text-center">
                         <div class="d-flex justify-content-center">
-                            <img class="camera-icon" src="./assets/camera-solid.svg" alt="camera">
+                            <img class="camera-icon" src="./assets_cliente/camera-solid.svg" alt="camera">
                         </div>
-                        <img src="./assets/profile/beard.png" style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
+                        <img src="./assets_cliente/profile/beard.png" style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
                         <small class="form-text text-black-50">Elegir foto de perfil</small>
                         <input type="file" form="reg-form" class="form-control-file" name="profileUpload" id="upload-profile">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <form action="register.php" method="post" enctype="multipart/form-data" id="reg-form">
+                    <form action="register_cliente.php" method="post" enctype="multipart/form-data" id="reg-form">
                         <div class="form-row">
                             <div class="col">
                                 <input type="text" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName'];  ?>" name="firstName" id="firstName" class="form-control" placeholder="Nombres">
