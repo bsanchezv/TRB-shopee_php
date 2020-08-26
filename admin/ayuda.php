@@ -14,7 +14,7 @@ function validate_input_text($textValue){
 // profile image
 function upload_image($path, $file){
     $targetDir = $path;
-    $default = "beard.png";
+    $default = "11.jpg";
 
     // get the filename
     $filename = basename($file['name']);
