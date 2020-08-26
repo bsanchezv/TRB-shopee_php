@@ -10,7 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 }
 ?>
+
 <section id="cart" class="py-3 mb-5">
+
+
     <div class="container-fluid w-75">
         <h5 class="font-baloo font-size-20">Lista de Deseos</h5>
 
@@ -25,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <!-- start cart item -->
                         <div class="row border-top py-3 mt-3">
                             <div class="col-sm-2">
-                                <img src="<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpeg" ?>" style="height: 120px;" alt="cart1" class="img-fluid">
+                                <img src="../admin<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpeg" ?>" style="height: 120px;" alt="cart1" class="img-fluid">
                             </div>
                             <div class="col-sm-8">
                                 <h5 class="font-baloo font-size-20"><?php echo $item['nombre'] ?? "Desconocido"; ?></h5>

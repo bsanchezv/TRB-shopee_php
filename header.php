@@ -20,9 +20,14 @@
 
     <?php
     //require functions.php file
-    require('./public/functions.php');
+    require('functions.php');
+
     ?>
 
+    <?php
+
+    $base_url = "https://trbshopee.herokuapp.com/";
+    ?>
 </head>
 <body>
 <!--start #header-->
@@ -30,15 +35,16 @@
     <div class="strip d-flex justify-content-between px-4 py-1 color-header-bg">
         <p class="font-rale font-size-12 text-black-50 m-0">Jr. Los incas 300-Urbanización Jorge Chávez, San Luis. (01) 512 4856</p>
         <div class="font-rale font-size-14">
-            <a href="./register/register-admi/login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="./public/wishlist.php" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
+            <a href="<?php echo $base_url; ?>register/register-admi/login.php" class="px-3 border-right border-left text-dark">Login</a>
+
+            <a href="<?php echo $base_url; ?>public/wishlist.php" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
         </div>
 
     </div>
 
     <!--Primary Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light color-second-bg">
-        <a class="navbar-brand" href="../index.php">TRB</a>
+        <a class="navbar-brand" href="index.php">TRB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,19 +52,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav m-auto font-rubik">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../index.php">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>">Inicio  <span class="sr-only">(current)</span></a>
                 </li>
                 <li
                 <li class="nav-item active">
-                    <a class="nav-link" href="../public/offer.php">Ofertas <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/public/offer.php">Ofertas <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="../public/new-products.php">Nuevos Productos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/public/new-products.php">Nuevos Productos <span class="sr-only">(current)</span></a>
                 </li>
 
             </ul>
             <form action="#" class="font-size-14 font-rale">
-                <a href="../public/cart.php" class="py-2 rounded-pill color-primary-bg">
+                <a href="<?php echo $base_url; ?>public/cart.php" class="py-2 rounded-pill color-primary-bg">
                     <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
                     <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart')); ?></span>
                 </a>
