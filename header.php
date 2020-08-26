@@ -26,7 +26,7 @@
 
     <?php
 
-    $base_url = "http://localhost/trb/TRB-shopee/";
+    $base_url = "https://trbshopee.herokuapp.com/";
     ?>
 </head>
 <body>

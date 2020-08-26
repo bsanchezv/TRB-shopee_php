@@ -1,6 +1,6 @@
 <?php
 
-$base_url = "http://localhost/trb/TRB-shopee/";
+$base_url = "https://trbshopee.herokuapp.com/";
 ?>
 <!--start Banner Ads  -->
 <section id="banner_adds">

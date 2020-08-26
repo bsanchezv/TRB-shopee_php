@@ -14,7 +14,7 @@ if (isset($_POST['top_sale_submit'])){
 ?>
 <?php
 
-$base_url = "http://localhost/trb/TRB-shopee/";
+$base_url = "https://trbshopee.herokuapp.com/";
 ?>
 <section id="top-sale">
     <div class="container py-5">
