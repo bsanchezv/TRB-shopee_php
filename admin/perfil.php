@@ -33,7 +33,7 @@
                                         <!--Imagen-->
                                         <div class="form-row my-4">
                                             <div class="col">
-                                                <img src="../register/register-admi<?php echo $administrador['profileImage'];?> " width="300" ><br>
+                                                <img src="<?php echo $administrador['profileImage'];?> " width="300" ><br>
                                             </div>
                                         </div>
                                         <!--nombres administrador-->
