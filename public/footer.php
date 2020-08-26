@@ -63,7 +63,7 @@
 <!--Custom Javascript-->
 <?php
 
-$base_url = "http://localhost/trb/TRB-shopee/";
+$base_url = "https://trbshopee.herokuapp.com/";
 ?>
 <script src="<?php echo $base_url; ?>index.js"></script>
 
