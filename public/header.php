@@ -31,7 +31,7 @@
         <p class="font-rale font-size-12 text-black-50 m-0">Jr. Los incas 300-Urbanización Jorge Chávez, San Luis. (01) 512 4856</p>
         <div class="font-rale font-size-14">
             <a href="./register/register-admi/login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="wishlist.php" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
+            <a href="./public/wishlist.php" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
         </div>
 
     </div>
