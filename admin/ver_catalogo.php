@@ -1,6 +1,6 @@
 
 <?php
-require('headside.php');
+include ('admin/headside.php');
 require('database/DBController.php');
 
 $query = "SELECT * FROM productos";
@@ -65,8 +65,8 @@ $con->close();
                                                 </th>
                                                 <th class="text-center"> <?php echo $registro['precio_normal'];  ?></th>
                                                 <th class="text-center" >
-                                                    <a href="verdetalle.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a>
-                                                    <a href="editar.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/editar.png" width="20" title="Editar"></a>
+                                                    <a href="./admin/verdetalle.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a>
+                                                    <a href="./admin/editar.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/editar.png" width="20" title="Editar"></a>
                                                 </th>
                                             </tr>
                                         <?php
