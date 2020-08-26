@@ -2,7 +2,7 @@
 
 <?php
 
-include ('../register//login_admin.php');
+include ('../register/login_admin.php');
 
 
 ?>

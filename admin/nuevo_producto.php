@@ -37,7 +37,7 @@ require('headside.php');
                                         <div class="form-group">
                                             <label for="categoriaProducto">Categoria</label>
                                             <select class="form-control" name="categoriaProducto" value="Seleccione">
-                                                <option value="Bebecrece">Bebecrece</option>
+                                                <option value="Enterizo">Enterizo</option>
                                                 <option value="Conjunto">Conjunto</option>
                                                 <option value="Vestido">Vestido</option>
                                             </select>
