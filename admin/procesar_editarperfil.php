@@ -22,7 +22,7 @@ if (empty($email)){
 
 $files = $_FILES['imagen'];
 //CAMBIAR DIRECCION, SOLO PUEDE SER EN UNA LAS IMAGENES
-$imagen = upload_image('./assets/profile/', $files);
+$imagen = upload_image('/assets/profile/', $files);
 
 
 if(empty($error)){
