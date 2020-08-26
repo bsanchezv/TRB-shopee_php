@@ -44,7 +44,7 @@
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">
                                                 <label for="Grupo de Nombre">Categoria </label><br>
-                                                <button type="button" id="NombreProducto" class="btn btn-info btn-sm" disabled>
+                                                <button type="button" id="CategoriaProducto" class="btn btn-info btn-sm" disabled>
                                                     <span><?php echo $product['categoria'];   ?></span>
                                                 </button>
 
@@ -97,7 +97,7 @@
                                         <div class="form-row my-4">
                                             <div class="col">
                                                 <label for="ImagenProducto">Imagen</label>
-                                                <img src="./admin<?php echo $product['imagen']?>" width="200"><br>
+                                                <img src="<?php echo $product['imagen']?>" width="200"><br>
                                             </div>
                                         </div>
                                         <!--Minimo Stock del producto-->
