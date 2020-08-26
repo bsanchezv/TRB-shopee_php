@@ -4,11 +4,16 @@ $item_id = $_GET['item_id'] ?? 1;
 foreach ($product->getData() as $item) :
 if ($item['item_id'] == $item_id) :
 ?>
+    <?php
+    $base_url = "https://trbshopee.herokuapp.com/";
+
+    //$base_url = "http://localhost/trb/TRB-shopee/";
+    ?>
 <section id="product" class="py-3">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="./admin<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
+                <img src="<?php echo $base_url; ?>admin<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceder a la compra</button>
@@ -135,7 +140,8 @@ if ($item['item_id'] == $item_id) :
                 <!--end size -->
 
             </div>
-            <div class="col-12">
+            <div class="col-12 my-3">
+
                 <h6 class="font-rubik">Descripción del Producto</h6>
                 <hr>
                 <h5 class="font-baloo font-size-20"><?php echo $item['descripcion'] ?? "Desconocido"; ?></h5>

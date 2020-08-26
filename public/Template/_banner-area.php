@@ -1,6 +1,7 @@
 <?php
-
 $base_url = "https://trbshopee.herokuapp.com/";
+
+//$base_url = "http://localhost/trb/TRB-shopee/";
 ?>
 <!--start Owl-carousel-->
 <section id="banner-area">

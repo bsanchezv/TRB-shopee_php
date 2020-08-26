@@ -83,7 +83,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i>Pedido con delivery gratuito.</h6>
                     <div class="border-top py-4">
                         <h5 class="font-baloo font-size-20">Subtotal (<?php echo isset($subTotal) ? count($subTotal) : 0; ?> item):&nbsp; <span class="text-danger">S/<span class="text-danger" id="deal-price"><?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span> </span> </h5>
-                        <button type="submit" class="btn btn-warning mt-3">Comprar</button>
+                        <!--<button type="submit" class="btn btn-warning mt-3">Comprar</button>-->
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="9FD5KRDDS659U">
+                            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
                     </div>
                 </div>
             </div>

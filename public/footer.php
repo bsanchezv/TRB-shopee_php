@@ -29,7 +29,7 @@
                     <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Términos y Condiciones</a>
                 </div>
             </div>
-            <div class="col-lg-2 col-12">
+            <!--<div class="col-lg-2 col-12">
                 <h4 class="font-rubik font-size-20">Cuenta</h4>
                 <div class="d-flex flex-column flex-wrap">
                     <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Mi cuenta</a>
@@ -37,12 +37,12 @@
                     <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Favoritos</a>
                     <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Boletín Informativo</a>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2">
-    <p class="font-rale font-size-14">&copy; Copyrights 2020. Diseñado por: Barbara Sánchez, gracias a:  <a href="https://www.youtube.com/channel/UCrG2Z0usOCCdUTAr4D1A8mw" class="color-second">Daily Tuition</a></p>
+    <p class="font-rale font-size-14">&copy; Copyrights 2020. Diseñado por: Barbara Sánchez, gracias a:  <a href="https://www.youtube.com/channel/UCrG2Z0usOCCdUTAr4D1A8mw" class="color-second">Daily Tuition</a> y Johnny Villagaray</p>
 </div>
 <!--end #footer-->
 
@@ -62,8 +62,9 @@
 
 <!--Custom Javascript-->
 <?php
-
 $base_url = "https://trbshopee.herokuapp.com/";
+
+//$base_url = "http://localhost/trb/TRB-shopee/";
 ?>
 <script src="<?php echo $base_url; ?>index.js"></script>
 
