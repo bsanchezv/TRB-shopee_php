@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="./admin/style.css">
 
     <!-- cached version -->
-    <link rel="stylesheet" href="./admincss/bootstrap.min.css" />
-    <link rel="stylesheet" href="./admincss/datepicker3.min.css" />
+    <link rel="stylesheet" href="./admin/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./admin/css/datepicker3.min.css" />
 
     <!-- main -->
-    <link rel="stylesheet" href="./admincss/main.css" />
+    <link rel="stylesheet" href="./admin/css/main.css" />
 
 </head>
 <body>
