@@ -1,7 +1,7 @@
 
     <?php
     require('headside.php');
-    require ('database/dbconect.php');
+    require('../database/dbconect.php');
 
     $item_id = $_GET['item_id'] ;
     $query = "SELECT * FROM productos WHERE item_id= '$item_id'";

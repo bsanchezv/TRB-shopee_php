@@ -24,7 +24,7 @@ $files = $_FILES['imagenProducto'];
 $imagen = upload_image('./imgproductos/', $files);
 
 if(empty($error)){
-    require('database/dbconect.php');
+    require('../database/dbconect.php');
     $oferta=$Precio_prod*(100-$Tasa_Descuento)/100;
     // query
     $query = "INSERT INTO productos(categoria,nombre,precio_normal,descuento,precio_oferta, talla,descripcion,color ,imagen,stock,stock_min, fecha_registro )
