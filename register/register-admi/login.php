@@ -3,8 +3,8 @@
 
 //session_start();
 // header.php
-include ('header.php');
-include ('helper.php');
+include ('register/register-admi/header.php');
+include ('register/register-admi/helper.php');
 ?>
 
 <?php
@@ -18,7 +18,7 @@ include ('helper.php');
     //}
     // proceso de login
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        require ('login-process.php');
+        require ('register/register-admi/login-process.php');
     }
 ?>
 
@@ -40,7 +40,7 @@ include ('helper.php');
 
             <!-- formulario -->
             <div class="d-flex justify-content-center">
-                <form action="login.php" method="post" enctype="multipart/form-data" id="log-form">
+                <form action="./register/register-admi/login.php" method="post" enctype="multipart/form-data" id="log-form">
                     <!-- email-->
                     <div class="form-row my-4">
                         <div class="col">
