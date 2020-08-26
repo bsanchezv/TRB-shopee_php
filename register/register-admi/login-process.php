@@ -23,7 +23,7 @@ if(empty($error)){
     $password = 'GwmhNXBD0J';
     $database = "ZUCZxBxbsp";
 
-    $con = mysqli_connect($host,$user,$password,$database);
+    include ('../../database/dbconect.php');
 
     $resultadoAdmi=mysqli_query($con,$query);
     $administrador=mysqli_fetch_assoc($resultadoAdmi);

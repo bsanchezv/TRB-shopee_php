@@ -1,7 +1,7 @@
 
 <?php
 include ('headside.php');
-require('../database/DBController.php');
+require('../database/dbconect.php');
 
 $query = "SELECT * FROM productos";
 
