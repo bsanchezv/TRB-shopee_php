@@ -1,7 +1,7 @@
 
 <?php
     // header.php
-        include ('header.php');
+        include ('../register/header.php');
 ?>
 
     <?php
