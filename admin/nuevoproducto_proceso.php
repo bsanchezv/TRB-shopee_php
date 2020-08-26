@@ -1,5 +1,5 @@
 <?php
-
+$id_admin = $_GET['id'];
 require ('ayuda.php');
 // error variable.
 $error = array();
@@ -32,7 +32,7 @@ if(empty($error)){
 
     $resultado=mysqli_query($con,$query);
 
-    header('location: ver_catalogo.php');
+    header("location: ver_catalogo.php?id=$id_admin");
 
     $con->close();
 }else{

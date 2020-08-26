@@ -2,6 +2,7 @@
 //require functions.php file
 require('headside.php');
 
+
 ?>
 <!--Cuerpo-->
 
@@ -22,7 +23,7 @@ require('headside.php');
                             <div class="panel-body">
 
                                 <div class="d-flex justify-content-center">
-                                    <form action="nuevoproducto_proceso.php" method="post" enctype="multipart/form-data" id="reg-form">
+                                    <form action="nuevoproducto_proceso.php?id=<?php echo $admiID;?>" method="post" enctype="multipart/form-data" id="reg-form">
                                         <!--nombres producto-->
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">
@@ -107,7 +108,7 @@ require('headside.php');
                                         </div>
                                         <!--boton de registrar-->
                                         <div class="submit-btn text-center my-5">
-                                            <a href="ver_catalogo.php"><button type="submit" class="btn btn-success rounded-pill text-dark px-5">Añadir Producto</button></a>
+                                            <button type="submit" class="btn btn-success rounded-pill text-dark px-5">Añadir Producto</button>
                                         </div>
                                     </form>
                                 </div>

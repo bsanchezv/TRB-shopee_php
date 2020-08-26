@@ -43,7 +43,7 @@ $administrador = mysqli_fetch_assoc($resultado);
                                         <div class="form-row my-4">
                                             <div class="col">
                                                 <label for="ImagenProducto">Imagen</label>
-                                                <img src="../register/register-admi<?php echo $administrador['profileImage'];?> " width="300"><br>
+                                                <img src="<?php echo $administrador['profileImage'];?> " width="300"><br>
                                                 <input type="file" class="btn btn-secondary text-center"  name="imagen">
                                             </div>
                                         </div>
