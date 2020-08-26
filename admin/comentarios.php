@@ -27,7 +27,7 @@ $product=mysqli_fetch_assoc($resultado);
                                 <!--imagen-->
                                 <div class="form-row my-4">
                                     <div class="col">
-                                        <img src="<?php echo $product['imagen']?>" width="200"><br>
+                                        <img src="../admin<?php echo $product['imagen']?>" width="200"><br>
                                     </div>
                                 </div>
 
