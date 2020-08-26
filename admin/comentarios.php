@@ -1,74 +1,97 @@
 <?php
 require('headside.php');
+require('../database/dbconect.php');
+$item_id = $_GET['item_id'] ;
+$query = "SELECT * FROM productos WHERE item_id= '$item_id'";
+$resultado=mysqli_query($con,$query);
+$product=mysqli_fetch_assoc($resultado);
 ?>
 
-    <!--Cuerpo-->
+<div class="page">
+    <div class="container-fluid">
 
-    <div class="page">
-        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-body">
+                    <div class="panel panel-defaul">
+                        <div class="panel-heading">
+                            <strong>
+                                <span> COMENTARIOS SOBRE PRODUCTO </span><br>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel-body">
-                        <div class="panel panel-defaul">
-                            <div class="panel-heading">
-                                <strong>
-                                    <span> COMENTARIOS SOBRE PRODUCTO: </span><br>
-                                    <span>Nombre: Bebecrece Acolchado</span><br>
-                                    <span>Color: Celeste</span><br>
-                                    <span>Talla: 0-3 Meses</span><br>
-                                </strong>
+                                <!--nombre-->
+                                <span>Nombre: <?php echo $product['nombre'];   ?></span><br>
+                                <!--color-->
+                                <span>Color: <?php echo $product['color'];?></span><br>
+                                <!--Talla-->
+                                <span>Talla: <?php echo $product['talla'];   ?></span><br>
+                                <!--imagen-->
+                                <div class="form-row my-4">
+                                    <div class="col">
+                                        <img src="<?php echo $product['imagen']?>" width="200"><br>
+                                    </div>
+                                </div>
+
+                            </strong>
+
+                            <?php
+                            $item_id = $_GET['item_id'] ;
+                            $query2 = "SELECT * FROM feedback WHERE item_id= '$item_id'";
+                            $resultado2=mysqli_query($con,$query2);
+
+                            ?>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div>
+                                <tbody>
+
+                                <?php
+                                while($registro = $resultado2->fetch_assoc()) {?>
+
+                                    <hr class="m-0">
+                                    <!--Cliente-->
+                                    <?php
+                                    $usuarioID = $registro['user_id'] ;
+                                    $query3 = "SELECT * FROM administrador WHERE user_id = '$usuarioID'";
+                                    $resultado3=mysqli_query($con,$query3);
+                                    $usuario=mysqli_fetch_assoc($resultado3);
+                                    ?>
+                                    <b><?php echo $usuario['first_name'];   ?> <?php echo $usuario['last_name'];   ?> </b><br>
+
+                                    <!--fecha y hora de comentario-->
+                                    <span> <?php echo $registro['fecha_comentario'];   ?></span><br>
+
+                                    <!--Estrellas-->
+
+                                    <!--Comentaio-->
+                                    <span> <?php echo $registro['comentario'];   ?></span><br>
+                                    <?php
+                                }
+
+                                ?>
 
 
+                                </tbody>
                             </div>
-                            <div class="panel-body">
 
-                                <div>
-                                    <b>Jorge Ramirez:</b><br>
-                                    <div class="rating text-warning font-size-12">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                    </div>
-                                    El producto me parece bueno, ya que presenta buena calidad de tela y un precio comodo con respecto a la competencia
-                                </div>
-                                <div class="my-4">
-                                    <b>Pedro Suarez</b><br>
-                                    <div class="rating text-warning font-size-12">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </div>
-                                    La compra realizada del bebecrece estuvo dentro de mis espectativas, además la presentacion en caja y el cumplimiento de los protocolos de seguridad por esta situacion
-                                    de la pandemia que presenta el país.
-                                </div>
-                                <div class="my-4">
-                                    <b>Alberto Jimerez</b><br>
-                                    <div class="rating text-warning font-size-12">
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="fas fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </div>
-                                    Me agradó el color y diseño del bebecrece pues es como yo lo esperaba de acuerdo al catalogo,, sin embargo tuve un
-                                    inconveniente pues la entrega demoró, y la caja arrugada.
-                                </div>
 
-                            </div>
+                        </div>
+
+
+
+
 
                         </div>
 
                     </div>
+
                 </div>
             </div>
-
         </div>
+
     </div>
+</div>
 
 
 
