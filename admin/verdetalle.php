@@ -53,7 +53,7 @@
                                         <!--Comentarios-->
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">
-                                                <a href="comentarios.php">Comentarios sobre producto</a><br>
+                                                <a href="comentarios.php?item_id=<?php echo $product['item_id'];?>&id=<?php echo $admiID;?>">Comentarios sobre producto</a><br>
                                             </div>
                                         </div>
                                         <!--precios-->
