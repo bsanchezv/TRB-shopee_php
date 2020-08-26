@@ -1,7 +1,7 @@
 <?php
 ob_start();
 //Include header.php file
-include('public/header.php');
+include('../header.php');
 ?>
 <?php
 /*//Include _banner-area.php file
@@ -17,11 +17,11 @@ include('Template/_special-price.php');
 include('Template/_banner-ads.php');*/
 
 //Include _new-products file
-include('public/Template/_new-products.php');
+include('Template/_new-products.php');
 
 ?>
 
 <?php
 //Include footer.php file
-include('public/footer.php');
+include('footer.php');
 ?>

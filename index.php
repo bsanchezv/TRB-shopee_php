@@ -1,7 +1,7 @@
 <?php
 ob_start();
 //Include header.php file
-include('public/header.php');
+include('header.php');
 ?>
 <?php
 //Include _banner-area.php file

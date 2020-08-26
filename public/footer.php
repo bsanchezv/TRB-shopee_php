@@ -61,7 +61,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
 
 <!--Custom Javascript-->
-<script src="./index.js"></script>
+<?php
+
+$base_url = "http://localhost/trb/TRB-shopee/";
+?>
+<script src="<?php echo $base_url; ?>index.js"></script>
 
 </body>
 </html>
