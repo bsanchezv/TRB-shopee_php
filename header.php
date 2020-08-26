@@ -36,7 +36,7 @@
     <div class="strip d-flex justify-content-between px-4 py-1 color-header-bg">
         <p class="font-rale font-size-12 text-black-50 m-0">Jr. Los incas 300-Urbanización Jorge Chávez, San Luis. (01) 512 4856</p>
         <div class="font-rale font-size-14">
-            <a href="<?php echo $base_url; ?>register/register-admi/login.php" class="px-3 border-right border-left text-dark">Login</a>
+            <a href="<?php echo $base_url; ?>register/login_cliente.php" class="px-3 border-right border-left text-dark">Login</a>
 
             <a href="<?php echo $base_url; ?>public/wishlist.php" class="px-3 border-right text-dark">Lista de Deseos (0)</a>
         </div>
