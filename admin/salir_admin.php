@@ -2,7 +2,7 @@
 
 <?php
 
-echo "SALIR";
+include ('../register/register-admi/login.php');
 
 
 ?>

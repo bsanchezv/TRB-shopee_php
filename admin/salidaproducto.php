@@ -161,13 +161,6 @@ require('headside.php');
         </div>
     </div>
 
-
-
-
-
-
-
-
     <!--Carrusel admin-->
 
 

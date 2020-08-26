@@ -1,7 +1,7 @@
 
     <?php
     require('headside.php');
-    require('database/DBController.php');
+    require('database/dbconect.php');
     $query = "SELECT * FROM productos";
 
     $resultado=mysqli_query($con,$query);

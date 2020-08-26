@@ -1,6 +1,6 @@
 <?php
 require('headside.php');
-require ('database/DBController.php');
+require ('database/dbconect.php');
 $admiID = $_GET['id'];
 $query = "SELECT * FROM administrador WHERE user_id= '$admiID'";
 $resultado = mysqli_query($con, $query);

@@ -1,7 +1,7 @@
 
     <?php
     require('headside.php');
-    require ('database/DBController.php');
+    require ('database/dbconect.php');
 
     $item_id = $_GET['item_id'] ;
     $query = "SELECT * FROM productos WHERE item_id= '$item_id'";
@@ -47,9 +47,8 @@
                                             <label for="categoriaProducto">Categoria</label>
                                             <select class="form-control" name="categoriaProducto" value="Seleccione">
                                                 <option value="Bebecrece">Bebecrece</option>
-                                                <option value="Enterizo">Enterizo</option>
+                                                <option value="Conjunto">Conjunto</option>
                                                 <option value="Vestido">Vestido</option>
-
                                             </select>
                                         </div>
                                         <!--precios-->
@@ -85,17 +84,22 @@
                                                 <textarea name="Descripcion" id="descripcion"  style="width : 300px; height: 200px" ><?php echo $product['descripcion'];?></textarea>
                                             </div>
                                         </div>
-                                        <!--Colores-->
+                                        <!--Colores -->
                                         <div class="form-group">
                                             <label for="coloresProducto">Seleccione Color</label>
                                             <select class="form-control" name="coloresProducto">
-                                                <option value="celeste">Celeste</option>
-                                                <option value="rojo">Rojo</option>
-                                                <option value="amarillo">Amarillo</option>
-                                                <option value="rosado">Rosado</option>
-                                                <option value="verde">Verde</option>
-                                                <option value="mariquita">Mariquita</option>
-                                                <option value="leopardo">Leopardo</option>
+                                                <option value="Celeste">Celeste</option>
+                                                <option value="Rojo">Rojo</option>
+                                                <option value="Amarillo">Amarillo</option>
+                                                <option value="Rosado">Rosado</option>
+                                                <option value="Verde">Verde</option>
+                                                <option value="Azul">Azul</option>
+                                                <option value="Plomo">Plomo</option>
+                                                <option value="Blanco">Blanco</option>
+                                                <option value="Vaca">Vaca</option>
+                                                <option value="Dalmata">Dalmata</option>
+                                                <option value="Tigre">Tigre</option>
+                                                <option value="Leopardo">Leopardo</option>
                                             </select>
                                         </div>
 

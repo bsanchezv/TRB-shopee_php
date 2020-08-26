@@ -2,7 +2,7 @@
 <?php
 
 require ('ayuda.php');
-require('database/DBController.php');
+require('database/dbconect.php');
 // error variable.
 $error = array();
 
