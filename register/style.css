@@ -15,7 +15,7 @@
 
 #register, #login-form {
     padding: 5% 0;
-    background: url("assets/fondo.png");
+    background: url("assets_admin/fondo.png");
     background-size: cover;
 }
 
