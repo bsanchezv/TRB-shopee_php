@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
     <!--Custom CSS file-->
-    <link rel="stylesheet" href="./admin/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- cached version -->
-    <link rel="stylesheet" href="./admin/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./admin/css/datepicker3.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/datepicker3.min.css" />
 
     <!-- main -->
-    <link rel="stylesheet" href="./admin/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 <body>
 <!--start #header-->
 <?php
-    require ('database/DBController.php');
+    require ('../database/DBController.php');
     $admiID=$_GET['id'];
     $datosAdmi= "SELECT * FROM administrador WHERE user_id= '$admiID'";
     $resultado3=mysqli_query($con,$datosAdmi);
@@ -59,13 +59,13 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="./admin/perfil.php?id=<?php echo $admi['user_id'];?>">
+                            <a href="perfil.php?id=<?php echo $admi['user_id'];?>">
                                 <img src="assets/perfil.jpg" alt="15" height="15" class="img-circle img-inline">
                                 Perfil
                             </a>
                         </li>
                         <li class="last">
-                            <a href="./admin/salir_admin.php">
+                            <a href="salir_admin.php">
                                 <img src="assets/salir.png" alt="15" height="15" >
                                 Salir
                             </a>
@@ -99,10 +99,10 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="text-center text-info"  href="./admin/nuevo_producto.php?id=<?php echo $admi['user_id'];?>">
+                        <li><a class="text-center text-info"  href="nuevo_producto.php?id=<?php echo $admi['user_id'];?>">
                                 <img src="assets/iconos/add.png" width="20" class="img-circle img-inline">
                                 Añadir nuevo</a></li>
-                        <li><a class="text-center text-info" href="./admin/ver_catalogo.php?id=<?php echo $admi['user_id'];?>">Ver Catalogo</a></li>
+                        <li><a class="text-center text-info" href="ver_catalogo.php?id=<?php echo $admi['user_id'];?>">Ver Catalogo</a></li>
                     </ul>
                 </div>
             </li>
@@ -117,9 +117,9 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="text-center text-info" href="./admin/registrarentrada.php?id=<?php echo $admi['user_id'];?>">Entrada Productos</a></li>
-                        <li><a class="text-center text-info" href="./admin/salidaproducto.php?id=<?php echo $admi['user_id'];?>">Salidas Productos</a></li>
-                        <li><a class="text-center text-info" href="./admin/bajo_stock.php?id=<?php echo $admi['user_id'];?>">Bajo Stock</a></li>
+                        <li><a class="text-center text-info" href="registrarentrada.php?id=<?php echo $admi['user_id'];?>">Entrada Productos</a></li>
+                        <li><a class="text-center text-info" href="salidaproducto.php?id=<?php echo $admi['user_id'];?>">Salidas Productos</a></li>
+                        <li><a class="text-center text-info" href="bajo_stock.php?id=<?php echo $admi['user_id'];?>">Bajo Stock</a></li>
                     </ul>
                 </div>
 

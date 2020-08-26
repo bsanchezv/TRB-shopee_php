@@ -3,14 +3,14 @@
 
 //session_start();
 // header.php
-include ('register/register-admi/header.php');
-include ('register/register-admi/helper.php');
+include ('header.php');
+include ('helper.php');
 ?>
 
 <?php
     // Conección mysqli
     //$user = array();
-    include ('database/DBController.php');
+    include ('../../database/DBController.php');
 
     // obtenemos la información del usuario
     //if(isset($_SESSION['userID'])){
@@ -18,7 +18,7 @@ include ('register/register-admi/helper.php');
     //}
     // proceso de login
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        require ('register/register-admi/login-process.php');
+        require ('login-process.php');
     }
 ?>
 
@@ -40,7 +40,7 @@ include ('register/register-admi/helper.php');
 
             <!-- formulario -->
             <div class="d-flex justify-content-center">
-                <form action="./register/register-admi/login.php" method="post" enctype="multipart/form-data" id="log-form">
+                <form action="login.php" method="post" enctype="multipart/form-data" id="log-form">
                     <!-- email-->
                     <div class="form-row my-4">
                         <div class="col">
