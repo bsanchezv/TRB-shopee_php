@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
     <!--Custom CSS file-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./admin/style.css">
 
     <!-- cached version -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/datepicker3.min.css" />
+    <link rel="stylesheet" href="./admincss/bootstrap.min.css" />
+    <link rel="stylesheet" href="./admincss/datepicker3.min.css" />
 
     <!-- main -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./admincss/main.css" />
 
 </head>
 <body>

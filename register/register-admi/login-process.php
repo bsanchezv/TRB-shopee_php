@@ -33,7 +33,7 @@ if(empty($error)){
     if (!empty($administrador)){
         // verify password
 
-        header("location: ./admin/ver_catalogo.php?id=$admiID");
+        header("location: ../../admin/ver_catalogo.php?id=$admiID");
 
         /*if(password_verify($password, $administrador['password'])){
 
