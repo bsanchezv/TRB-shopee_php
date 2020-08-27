@@ -30,7 +30,7 @@ foreach ($myPost as $key => $value) {
 }
 
 // Step 2: POST IPN data back to PayPal to validate
-$ch = curl_init('https://ipnpb.paypal.com/cgi-bin/webscr');
+$ch = curl_init('https://ipnpb.sandbox.paypal.com/cgi-bin/webscr');
 curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
@@ -52,7 +52,7 @@ curl_close($ch);
 
 // inspect IPN validation result and act accordingly
 if (strcmp ($res, "VERIFIED") == 0) {
-  
+   
   // The IPN is verified, process it:
   // check whether the payment_status is Completed
   // check that txn_id has not been previously processed
