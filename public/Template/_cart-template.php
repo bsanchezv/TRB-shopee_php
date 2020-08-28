@@ -92,6 +92,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         </form>
 
                     </div>
+                    <div class="border-top py-4">
+                        <a href="comprobantePDF.php?user_id=<?php echo 1; ?>">Ver comprobante</a>
+                    </div>
                 </div>
             </div>
             <!-- end subtotal section-->

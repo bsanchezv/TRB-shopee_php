@@ -5,8 +5,8 @@ require ('ayuda.php');
 require('../database/dbconect.php');
 // error variable.
 $error = array();
-
-$item_id = $_GET['id'] ;
+$id_admin = $_GET['id'];
+$item_id = $_GET['item_id'] ;
 $agregar = $_POST['agregar'];
 
 $actualizar = "SELECT * FROM productos WHERE item_id= '$item_id'";
@@ -24,7 +24,7 @@ if(empty($error)){
 
     $resultado=mysqli_query($con,$query);
 
-    header('location: registrarentrada.php');
+    header("location: registrar_entrada.php?id=$id_admin");
 
     $con->close();
 }else{

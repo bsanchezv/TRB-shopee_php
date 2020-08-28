@@ -31,7 +31,7 @@
                             <div class="panel-body">
 
                                 <div class="d-flex justify-content-center">
-                                    <form action="procesar_editar.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>" method="post" enctype="multipart/form-data" id="reg-form">
+                                    <form action="procesar_editar.php?item_id=<?php echo $product['item_id'];?>&id=<?php echo $admi['user_id'];?>" method="post" enctype="multipart/form-data" id="reg-form">
                                         <!--nombre producto-->
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">
@@ -107,7 +107,7 @@
                                         <div class="form-row my-4">
                                             <div class="col">
                                                 <label for="ImagenProducto">Imagen</label>
-                                                <img src="<?php echo $product['imagen']?>" width="200"><br>
+                                                <img src="../admin<?php echo $product['imagen']?>" width="200"><br>
                                                 <input type="file" class="btn btn-info text-center"  name="imagenProducto">
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@
                                             <label for="StockProducto">Stock Mínimo </label>
                                             <input type="text"  style="width : 100px" value="<?php echo $product['stock_min']?>" name="stockmin"><span>unidades</span>
                                         </div>
-                                        <!--boton de registrar-->
+                                        <!--boton de guardar-->
                                         <div class="submit-btn text-center my-5">
                                             <button type="submit" class="btn btn-warning rounded-pill text-dark px-5">Guardar Cambios</button>
                                         </div>
