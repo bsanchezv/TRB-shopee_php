@@ -1,7 +1,7 @@
 
 
     <?php
-
+        $base= "";
         require('headside.php');
         require('../database/dbconect.php');
 
@@ -97,7 +97,8 @@
                                         <div class="form-row my-4">
                                             <div class="col">
                                                 <label for="ImagenProducto">Imagen</label>
-                                                <img src="../admin<?php echo $product['imagen']?>" width="200"><br>
+                                                <!--<img src="../admin php" width="200"><br>-->
+                                                <img src="<?php echo $product['imagen']?>" width="200"><br>
                                             </div>
                                         </div>
                                         <!--Minimo Stock del producto-->

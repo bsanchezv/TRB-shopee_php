@@ -1,5 +1,10 @@
 <?php
 require('headside.php');
+require('../database/dbconect.php');
+
+$query = "SELECT * FROM comprobantes";
+$resultado=mysqli_query($con,$query);
+$con->close();
 ?>
 
     <div class="page">
@@ -32,116 +37,37 @@ require('headside.php');
                                 <table class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th class="text-center" style="width: 50px;">#</th>
-                                            <th class="text-center" style="width: 18%;"> Nombre  </th>
-                                            <th class="text-center" style="width: 10%;"> Cantidad</th>
-                                            <th class="text-center" style="width: 10%;"> P. Unit.</th>
-                                            <th class="text-center" style="width: 10%;"> Total</th>
-                                            <th class="text-center" style="width: 30%;"> Destino </th>
-                                            <th class="text-center" style="width: 10%;"> Fecha </th>
-                                            <th class="text-center" style="width: 100px;"> Detalle </th>
+                                            <th class="text-center" style="width: 20px;">Nro comprobante</th>
+                                            <th class="text-center" style="width: 25%;"> Nombres y Apellidos  </th>
+                                            <th class="text-center" style="width: 20%;"> Fecha </th>
+                                            <th class="text-center" style="width: 20px;"> Detalle </th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php
+                                        while($registro = $resultado->fetch_assoc()) {?>
                                         <tr>
-                                            <th class="text-center" ">1</th>
-                                            <th> Producto 1  </th>
-                                            <th class="text-center" "> 5</th>
-                                            <th class="text-center" "> S/10</th>
-                                            <th class="text-center" > S/100</th>
-                                            <th class="text-center" > Lima,Surco, Jr Ica 123 </th>
-                                            <th class="text-center""> 04/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
+                                            <?php
+                                            require('../database/dbconect.php');
+                                            $user_id=$registro['user_id'];
+                                            $query2 = "SELECT * FROM user WHERE user_id='$user_id'";
+                                            $resultado2=mysqli_query($con,$query2);
+                                            $cliente=mysqli_fetch_assoc($resultado2);
+                                            $con->close();
+                                            ?>
+
+
+                                            <th class="text-center" "><?php echo $registro['id_venta'];  ?></th>
+                                            <th>  <?php echo $cliente['first_name']; echo " "; echo $cliente['last_name'];?></th>
+                                            <th class="text-center"><?php echo $registro['fecha_venta'];  ?> </th>
+                                            <th class="text-center"> <a href="detalleventa.php?id_pdf=<?php echo $registro['pdf'];?> & id=<?php echo $admi['user_id'];?>"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
 
                                         </tr>
-                                        <tr>
-                                            <th class="text-center" ">2</th>
-                                            <th> Producto 2  </th>
-                                            <th class="text-center" "> 7</th>
-                                            <th class="text-center" "> S/20</th>
-                                            <th class="text-center" > S/140</th>
-                                            <th class="text-center" > Lima,Lince, Jr Canta 100 </th>
-                                            <th class="text-center""> 02/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
+                                            <?php
+                                        }
 
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">3</th>
-                                            <th> Producto 3  </th>
-                                            <th class="text-center" "> 10</th>
-                                            <th class="text-center" "> S/30</th>
-                                            <th class="text-center" > S/300</th>
-                                            <th class="text-center" > Lima,Lima, Jr Nicolas 1414 </th>
-                                            <th class="text-center""> 01/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
+                                        ?>
 
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">4</th>
-                                            <th> Producto 4  </th>
-                                            <th class="text-center" "> 2</th>
-                                            <th class="text-center" "> S/20</th>
-                                            <th class="text-center" > S/40</th>
-                                            <th class="text-center" > Lima,San Luis, Jr Rosa 10 </th>
-                                            <th class="text-center""> 30/07/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">5</th>
-                                            <th> Producto 8  </th>
-                                            <th class="text-center" "> 5</th>
-                                            <th class="text-center" "> S/12</th>
-                                            <th class="text-center" > S/60</th>
-                                            <th class="text-center" > Lima,Comas, Jr Lomas 100 </th>
-                                            <th class="text-center""> 27/07/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">6</th>
-                                            <th> Producto 3  </th>
-                                            <th class="text-center" "> 4</th>
-                                            <th class="text-center" "> S/15</th>
-                                            <th class="text-center" > S/60</th>
-                                            <th class="text-center" > Lima,Surco, Av Principal 321 </th>
-                                            <th class="text-center""> 26/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">7</th>
-                                            <th> Producto 15  </th>
-                                            <th class="text-center" "> 5</th>
-                                            <th class="text-center" "> S/10</th>
-                                            <th class="text-center" > S/50</th>
-                                            <th class="text-center" > Lima,Santa Anita Jr Pedro 510 </th>
-                                            <th class="text-center""> 04/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">8</th>
-                                            <th> Producto 12  </th>
-                                            <th class="text-center" "> 5</th>
-                                            <th class="text-center" "> S/11</th>
-                                            <th class="text-center" > S/55</th>
-                                            <th class="text-center" > Lima,La Victoria Av Mexico 1550</th>
-                                            <th class="text-center""> 04/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
-                                        <tr>
-                                            <th class="text-center" ">9</th>
-                                            <th> Producto 24  </th>
-                                            <th class="text-center" "> 4</th>
-                                            <th class="text-center" "> S/12</th>
-                                            <th class="text-center" > S/48</th>
-                                            <th class="text-center" > Lima,El Agustino Av Rivaguero 100 </th>
-                                            <th class="text-center""> 04/08/2020 </th>
-                                            <th class="text-center" "> <a href="detalleventa.php"><img src="assets/iconos/verdetalle.png" width="20" title="Ver Detalle"></a> </th>
-
-                                        </tr>
                                     </tbody>
 
 

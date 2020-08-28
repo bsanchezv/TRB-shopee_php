@@ -24,7 +24,7 @@ if(empty($error)){
 
     $resultado=mysqli_query($con,$query);
 
-    header("location: registrar_entrada.php?id=$id_admin");
+    header("location: registrarentrada.php?id=$id_admin");
 
     $con->close();
 }else{

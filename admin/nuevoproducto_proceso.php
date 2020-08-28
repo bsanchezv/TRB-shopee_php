@@ -21,7 +21,8 @@ $tallaProducto = $_POST['tallaProducto'];
 $coloresProducto = $_POST['coloresProducto'];
 
 $files = $_FILES['imagenProducto'];
-$imagen = upload_image('/imgproductos/', $files);
+$imagen = upload_image('https://trbshopee.herokuapp.com/admin/imgproductos/', $files);
+//$imagen = upload_image('/imgproductos/', $files);
 
 if(empty($error)){
     require('../database/dbconect.php');
