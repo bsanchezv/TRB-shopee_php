@@ -31,6 +31,7 @@ class Product
     {
         if (isset($item_id)) {
             $result = $this->db->con->query("SELECT * FROM {$table} WHERE item_id={$item_id}");
+
             // fetch product data one by one
             while ($item = mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 $resultArray[] = $item;
@@ -40,4 +41,3 @@ class Product
         }
     }
 }
-

@@ -50,22 +50,7 @@ $(document).ready(function(){
             }
         }
     });
-    /*
-         // blogs owl carousel
-         $("#blogs .owl-carousel").owlCarousel({
-            loop: true,
-            nav: false,
-            dots: true,
-            responsive : {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                }
-            }
-        })
-        */
+
     // product qty section
     let $qty_up = $(".qty .qty-up");
     let $qty_down = $(".qty .qty-down");
@@ -78,10 +63,17 @@ $(document).ready(function(){
         let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
 
+            //$base_url = "https://trbshopee.herokuapp.com/";
+           // $base_url = "http://localhost/trb/TRB-shopee/";
+
+        //console.log($(this).data("id"));
+
         // change product price using ajax call
-        $.ajax({url: "public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
-                let obj = JSON.parse(result);
-                let item_price = obj[0]['precio_normal'];
+        $.ajax({url: "http://localhost/trb/TRB-shopee/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")},
+            success: function(data){
+                //console.log(data);
+                let obj2 = JSON.parse(data);
+                let precio_oferta = obj2[0]['precio_oferta'];
 
                 if($input.val() >= 1 && $input.val() <= 9){
                     $input.val(function(i, oldval){
@@ -89,10 +81,10 @@ $(document).ready(function(){
                     });
 
                     // increase price of the product
-                    $price.text(parseInt(precio_normal * $input.val()).toFixed(2));
+                    $price.text(parseInt(precio_oferta * $input.val()).toFixed(2));
 
                     // set subtotal price
-                    let subtotal = parseInt($deal_price.text()) + parseInt(precio_normal);
+                    let subtotal = parseInt($deal_price.text()) + parseInt(precio_oferta);
                     $deal_price.text(subtotal.toFixed(2));
                 }
 
@@ -106,9 +98,11 @@ $(document).ready(function(){
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
 
         // change product price using ajax call
-        $.ajax({url: "template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
+        $.ajax({url: "http://localhost/trb/TRB-shopee/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
                 let obj = JSON.parse(result);
-                let item_price = obj[0]['precio_normal'];
+              //  console.log(obj);
+
+                let precio_oferta = obj[0]['precio_oferta'];
 
                 if($input.val() > 1 && $input.val() <= 10){
                     $input.val(function(i, oldval){
@@ -117,10 +111,10 @@ $(document).ready(function(){
 
 
                     // increase price of the product
-                    $price.text(parseInt(precio_normal * $input.val()).toFixed(2));
+                    $price.text(parseInt(precio_oferta * $input.val()).toFixed(2));
 
                     // set subtotal price
-                    let subtotal = parseInt($deal_price.text()) - parseInt(precio_normal);
+                    let subtotal = parseInt($deal_price.text()) - parseInt(precio_oferta);
                     $deal_price.text(subtotal.toFixed(2));
                 }
 

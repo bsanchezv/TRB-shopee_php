@@ -66,13 +66,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     </div>
                     <div class="col-sm-2 text-right">
                         <div class="font-size-20 text-danger font-baloo">
-                            S/<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['precio_normal'] ?? 0; ?></span>
+                            S/<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['precio_oferta'] ?? 0; ?></span>
                         </div>
                     </div>
                 </div>
                 <!-- end cart item -->
                 <?php
-                    return $item['precio_normal'];
+                    return $item['precio_oferta'];
                 }, $cart); // closing array_map function
                 endforeach;
                 ?>

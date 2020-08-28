@@ -3,11 +3,21 @@
 $item_id = $_GET['item_id'] ?? 1;
 foreach ($product->getData() as $item) :
 if ($item['item_id'] == $item_id) :
+    // request method post
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        //especificando para que no llame más de una vez
+        if (isset($_POST['special_price_submit'])){
+            // call method addToCart
+            $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        }
+    }
+    $in_cart = $Cart->getCartId($product->getData('cart'));
 ?>
-    <?php
-    $base_url = "https://trbshopee.herokuapp.com/";
 
-    //$base_url = "http://localhost/trb/TRB-shopee/";
+    <?php
+    //$base_url = "https://trbshopee.herokuapp.com/";
+
+    $base_url = "http://localhost/trb/TRB-shopee/";
     ?>
 <section id="product" class="py-3">
     <div class="container">
@@ -15,17 +25,22 @@ if ($item['item_id'] == $item_id) :
             <div class="col-sm-6">
                 <img src="<?php echo $base_url; ?>admin<?php echo $item['imagen'] ?? "public/assets/Productos/1.jpg" ?>" alt="product" class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
-                    <div class="col">
+                    <!--<div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceder a la compra</button>
-                    </div>
+                    </div>-->
                     <div class="col">
-                        <?php
-                        if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
-                            echo '<button type="submit" disabled class="btn btn-success font-size-16 form-control">En el carrito</button>';
-                        }else{
-                            echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-16 form-control">Agregar al carrito</button>';
-                        }
-                        ?>
+
+                        <form method="post">
+                            <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
+                            <input type="hidden" name="user_id" value="<?php echo 1; ?>">
+                            <?php
+                            if (in_array($item['item_id'], $in_cart ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success font-size-12">En el carrito</button>';
+                            }else{
+                                echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Agregar al carrito</button>';
+                            }
+                            ?>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -40,7 +55,7 @@ if ($item['item_id'] == $item_id) :
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="far fa-star"></i></span>
                     </div>
-                    <a href="#" class="px-2 font-rale font-size-14">20,534 ratings | 1000+ preguntas contestadas</a>
+                    <a href="#" class="px-2 font-rale font-size-14">2 calificaciones</a>
                 </div>
                 <hr class="m-0">
 
