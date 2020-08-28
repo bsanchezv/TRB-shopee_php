@@ -24,5 +24,5 @@ include('header.php');
 
 </div>
 <div class="border-top py-4">
-    <a href="/public/comprobantePDF.php?user_id=<?php echo 1; ?>">Ver comprobante</a>
+    <a href="comprobantePDF.php?user_id=<?php echo 1; ?>">Ver comprobante</a>
 </div>
