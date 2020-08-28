@@ -15,9 +15,9 @@ if ($item['item_id'] == $item_id) :
 ?>
 
     <?php
-    //$base_url = "https://trbshopee.herokuapp.com/";
+    $base_url = "https://trbshopee.herokuapp.com/";
 
-    $base_url = "http://localhost/trb/TRB-shopee/";
+    //$base_url = "http://localhost/trb/TRB-shopee/";
     ?>
 <section id="product" class="py-3">
     <div class="container">
