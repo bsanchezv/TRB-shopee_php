@@ -109,3 +109,11 @@ button, button:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+.con{
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.5);
+}
