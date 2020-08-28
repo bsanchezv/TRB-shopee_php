@@ -1,6 +1,6 @@
 
 <?php
-require('../public/fpdf/fpdf.php');
+require('public/fpdf/fpdf.php');
 
 
 
@@ -50,7 +50,7 @@ class PDF extends FPDF
 
 //cliente
 
-require('../database/dbconect.php');
+require('database/dbconect.php');
 $user_id = $_GET['user_id'];
 $datosUser = "SELECT * FROM user WHERE user_id= '$user_id'";
 $resultado = mysqli_query($con, $datosUser);
@@ -99,7 +99,7 @@ $pdf->Ln(10);
 
 //PRODUCTOS
 
-require('../database/dbconect.php');
+require('database/dbconect.php');
 $user_id = $_GET['user_id'];
 $prodCAr = "SELECT * FROM cart WHERE user_id= '$user_id'";
 $resultado2 = mysqli_query($con, $prodCAr);
