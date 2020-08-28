@@ -31,7 +31,7 @@
                             <div class="panel-body">
 
                                 <div class="d-flex justify-content-center">
-                                    <form action="procesar_editar.php?item_id=<?php echo $registro['item_id'];?>&id=<?php echo $admi['user_id'];?>" method="post" enctype="multipart/form-data" id="reg-form">
+                                    <form action="procesar_editar.php?item_id=<?php echo $product['item_id'];?>&id=<?php echo $admi['user_id'];?>" method="post" enctype="multipart/form-data" id="reg-form">
                                         <!--nombre producto-->
                                         <div class="form-row my-4"> <!--margen y=4-->
                                             <div class="col">
