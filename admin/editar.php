@@ -107,7 +107,7 @@
                                         <div class="form-row my-4">
                                             <div class="col">
                                                 <label for="ImagenProducto">Imagen</label>
-                                                <img src="<?php echo $product['imagen']?>" width="200"><br>
+                                                <img src="../admin<?php echo $product['imagen']?>" width="200"><br>
                                                 <input type="file" class="btn btn-info text-center"  name="imagenProducto">
                                             </div>
                                         </div>

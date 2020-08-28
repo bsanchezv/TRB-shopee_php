@@ -125,16 +125,45 @@
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
+
                                                         <div class="modal-body">
                                                             <span>Nombre: <?php echo $product['nombre'];?> </span><br>
                                                             <span>Color: <?php echo $product['color'];?></span><br>
                                                             <span>Talla: <?php echo $product['talla'];?></span><br>
                                                             <label>Ingrese Contraseña</label> <br>
-                                                            <input type="password" class="text-center">
+                                                            <input type="password" class="text-center" name="pass">
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                            <a href="ver_catalogo.php"><button type="button" class="btn btn-danger">Eliminar</button></a>
+                                                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                                                            <?php
+
+                                                            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                                                                $pass=$_POST['pass'];
+                                                                if ($pass=="borrar"){
+
+                                                                    $query = "DELETE FROM productos WHERE item_id='$item_id'";
+
+                                                                    $con = mysqli_connect("localhost","root","","register_db");
+
+                                                                    $resultado=mysqli_query($con,$query);
+
+                                                                    header('location: ver_catalogo.php');
+
+                                                                    $con->close();
+
+
+                                                                }else{
+                                                                    echo "CODIGO DE ELIMINACION INCORRECTA";
+                                                                }
+                                                            }
+
+
+
+                                                            ?>
+
+
+
                                                         </div>
                                                     </div>
                                                 </div>
