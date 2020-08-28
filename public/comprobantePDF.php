@@ -61,7 +61,7 @@ $query3 = "SELECT * FROM comprobantes ORDER BY id_venta DESC LIMIT 1 ";
 $resultado3 = mysqli_query($con, $query3);
 $comprobante1=mysqli_fetch_assoc($resultado3);
 $id_venta=$comprobante1['id_venta'] + 1;
-$archivo="comprobantes/comprobante-$id_venta.pdf";
+$archivo="/comprobantes/comprobante-$id_venta.pdf";
 
 
 
