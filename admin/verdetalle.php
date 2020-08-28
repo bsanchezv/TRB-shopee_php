@@ -108,66 +108,9 @@
 
                                         <!--botones de editar y eliminar producto-->
                                         <div class="submit-btn text-center my-5">
-                                            <a href="editar.php?id=<?php echo $item_id;?>" class="btn btn-warning rounded-pill text-dark px-5">Editar Producto</a>
-                                            <!--<a href="eliminar.php" class="btn btn-danger rounded-pill text-dark px-5">Eliminar Producto</a>-->
-                                            <!-- Boton para ELIMINAR -->
-                                            <button type="button" class="btn btn-danger rounded-pill text-light px-5" data-toggle="modal" data-target="#exampleModalCenter">
-                                                Eliminar Producto
-                                            </button>
+                                            <a href="editar.php?item_id=<?php echo $product['item_id'];?>&id=<?php echo $admi['user_id'];?>" class="btn btn-warning rounded-pill text-dark px-5">Editar Producto</a>
+                                            <a href="eliminar_producto.php?item_id=<?php echo $product['item_id'];?>&id=<?php echo $admi['user_id'];?>" class="btn btn-danger rounded-pill text-white px-5">Eliminar Producto</a>
 
-                                            <!-- CONTENIDO(VENTANA EMERGENTE) MODAL CLASS -->
-                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLongTitle">ELIMINAR PRODUCTO</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <span>Nombre: <?php echo $product['nombre'];?> </span><br>
-                                                            <span>Color: <?php echo $product['color'];?></span><br>
-                                                            <span>Talla: <?php echo $product['talla'];?></span><br>
-                                                            <label>Ingrese Contraseña</label> <br>
-                                                            <input type="password" class="text-center" name="pass">
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                            <button type="submit" class="btn btn-danger">Eliminar</button>
-                                                            <?php
-
-                                                            if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                                                                $pass=$_POST['pass'];
-                                                                if ($pass=="borrar"){
-
-                                                                    $query = "DELETE FROM productos WHERE item_id='$item_id'";
-
-                                                                    $con = mysqli_connect("localhost","root","","register_db");
-
-                                                                    $resultado=mysqli_query($con,$query);
-
-                                                                    header('location: ver_catalogo.php');
-
-                                                                    $con->close();
-
-
-                                                                }else{
-                                                                    echo "CODIGO DE ELIMINACION INCORRECTA";
-                                                                }
-                                                            }
-
-
-
-                                                            ?>
-
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                     </form>

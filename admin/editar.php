@@ -121,7 +121,7 @@
                                             <label for="StockProducto">Stock Mínimo </label>
                                             <input type="text"  style="width : 100px" value="<?php echo $product['stock_min']?>" name="stockmin"><span>unidades</span>
                                         </div>
-                                        <!--boton de registrar-->
+                                        <!--boton de guardar-->
                                         <div class="submit-btn text-center my-5">
                                             <button type="submit" class="btn btn-warning rounded-pill text-dark px-5">Guardar Cambios</button>
                                         </div>
