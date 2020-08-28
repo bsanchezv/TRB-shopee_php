@@ -46,18 +46,25 @@ if ($item['item_id'] == $item_id) :
 
                 <!---start product price  -->
                 <table class="my-3">
-                    <tr class="font-rale font-size-14">
-                        <td>Precio Normal:</td>
-                        <td><strike>S/20.00</strike></td>
-                    </tr>
-                    <tr class="font-rale font-size-14">
-                        <td>Precio Oferta:</td>
-                        <td class="font-size-20 text-danger">S/<span><?php echo $item['precio_normal'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Incluido I.G.V.</small></td>
-                    </tr>
-                    <tr class="font-rale font-size-14">
-                        <td>Ahorro:</td>
-                        <td><span class="font-size-16 text-danger">S/3.00</span></td>
-                    </tr>
+                    <?php if ($item['precio_oferta'] == $item['precio_normal']): ?>
+                        <tr class="font-rale font-size-14">
+                            <td>Precio:</td>
+                            <td>S/<?php echo $item['precio_normal']??'0';?></td>
+                        </tr>
+
+                    <?php else: ?>
+                        <tr class="font-rale font-size-14">
+                            <td>Precio Normal:</td>
+                            <td><span class="color-red"><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
+                        </tr>
+                        <tr class="font-rale font-size-14">
+                            <td>Precio Oferta:</td>
+                            <td class="font-size-16"><span>S/<?php echo $item['precio_oferta']??'0';?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Incluido I.G.V.</small></td>
+
+                        </tr>
+                    <?php endif ?>
+
+
                 </table>
                 <!--- end product price -->
 

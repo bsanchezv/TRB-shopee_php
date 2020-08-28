@@ -39,7 +39,16 @@ $base_url = "https://trbshopee.herokuapp.com/";
                             <span><i class="far fa-star"></i></span>
                         </div>
                         <div class="price py-2">
-                            <span>S/<?php echo $item['precio_normal']??'0';?></span>
+
+                            <?php if ($item['precio_oferta'] == $item['precio_normal']): ?>
+
+                                <span>S/<?php echo $item['precio_normal']??'0';?></span>
+
+                            <?php else: ?>
+                                <td><span class="color-red"><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
+                                <td><span>S/<?php echo $item['precio_oferta']??'0';?></span></td>
+
+                            <?php endif ?>
                         </div>
                         <form method="post">
                             <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">

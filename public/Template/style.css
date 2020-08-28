@@ -63,10 +63,6 @@ button, button:focus {
 .color-header-bg {
     background: #FFECF1;
 }
-.color-red {
-    color: #f11f1a;
-}
-
 
 /*Top-sale Template*/
 #top-sale .owl-carousel .item .product a {

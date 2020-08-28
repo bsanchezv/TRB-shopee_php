@@ -36,8 +36,12 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                                     <span><i class="far fa-star"></i></span>
                                 </div>
                                 <div class="price py-2">
-                                    <td><span><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
-                                    <td><span>S/<?php echo $item['precio_oferta']??'0';?></span></td>
+                                    <?php if ($item['precio_oferta'] != $item['precio_normal']): ?>
+
+                                        <td><span class="color-red"><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
+                                        <td><span>S/<?php echo $item['precio_oferta']??'0';?></span></td>
+
+                                    <?php endif ?>
                                 </div>
                                 <form method="post">
                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">

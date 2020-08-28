@@ -38,7 +38,7 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
 
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
-                        <a href="<?php printf('%s?item_id=%s', 'https://trbshopee.herokuapp.com/', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', 'https://trbshopee.herokuapp.com/public/product.php', $item['item_id']); ?>"><img src="./admin<?php echo $item['imagen']??"public/assets/Productos/1.jpg"; ?>" alt="product1" class="img-fluid"></a>
                         <div class="text-center">
                             <h6><?php echo $item['nombre']??"Desconocido"; ?></h6>
                             <div class="rating text-warning font-size-12">
@@ -49,7 +49,17 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                                 <span><i class="far fa-star"></i></span>
                             </div>
                             <div class="price py-2">
-                                <span>S/<?php echo $item['precio_normal']??'0';?></span>
+
+                                <?php if ($item['precio_oferta'] == $item['precio_normal']): ?>
+
+                                    <span>S/<?php echo $item['precio_normal']??'0';?></span>
+
+                                <?php else: ?>
+                                    <span class="color-red"><strike>S/<?php echo $item['precio_normal']??'0';?></strike></span></td>
+                                    <td><span>S/<?php echo $item['precio_oferta']??'0';?></span></td>
+
+                                <?php endif ?>
+
                             </div>
                             <form method="post">
                                 <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
