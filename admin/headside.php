@@ -30,6 +30,7 @@
 <!--start #header-->
 <?php
     require ('../database/dbconect.php');
+    $base="https://trbshopee.herokuapp.com/";
     $admiID=$_GET['id'];
     $datosAdmi= "SELECT * FROM administrador WHERE user_id= '$admiID'";
     $resultado3=mysqli_query($con,$datosAdmi);
