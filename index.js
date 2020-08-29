@@ -69,7 +69,7 @@ $(document).ready(function(){
         //console.log($(this).data("id"));
 
         // change product price using ajax call
-        $.ajax({url: "http://localhost/trb/TRB-shopee/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")},
+        $.ajax({url: "https://trbshopee.herokuapp.com/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")},
             success: function(data){
                 //console.log(data);
                 let obj2 = JSON.parse(data);
@@ -98,7 +98,7 @@ $(document).ready(function(){
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
 
         // change product price using ajax call
-        $.ajax({url: "http://localhost/trb/TRB-shopee/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
+        $.ajax({url: "https://trbshopee.herokuapp.com/public/Template/ajax.php", type : 'post', data : { itemid : $(this).data("id")}, success: function(result){
                 let obj = JSON.parse(result);
               //  console.log(obj);
 
