@@ -25,7 +25,7 @@ if(empty($error)){
 
     if (!empty($cliente)){
         // verify password
-        header("location: http://localhost/trb/TRB-shopee/continuar_compra.php?id=$clienteID");
+        header("location: https://trbshopee.herokuapp.com/continuar_compra.php?id=$clienteID");
         /*
         if(password_verify($password, $cliente['password'])){
             header("location: ../index.php?id=$clienteID");
