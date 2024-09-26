@@ -1,2 +1,2 @@
 # TRB_shopee
-Hagan algo :v
+Página web comercial para la empresa TRB.
